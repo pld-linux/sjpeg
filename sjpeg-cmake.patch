@@ -1,0 +1,11 @@
+--- sjpeg-676de227d75877eb5863ec805ba0a4b97fc2fc6c/CMakeLists.txt.orig	2021-04-22 18:39:11.000000000 +0200
++++ sjpeg-676de227d75877eb5863ec805ba0a4b97fc2fc6c/CMakeLists.txt	2021-10-03 08:34:34.627748773 +0200
+@@ -121,7 +121,7 @@ endif()
+ 
+ # build the utils library
+ include_directories(${SJPEG_DEP_IMG_INCLUDE_DIRS})
+-add_library(utils
++add_library(utils STATIC
+             ${CMAKE_CURRENT_SOURCE_DIR}/examples/utils.cc
+             ${CMAKE_CURRENT_SOURCE_DIR}/examples/utils.h
+ )
